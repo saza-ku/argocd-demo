@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: i2c
+spec:
+  containers:
+  - name: wasm
+    image: mewz-test.sakuracr.jp/i2c
+  nodeName: m5stickcplus2
