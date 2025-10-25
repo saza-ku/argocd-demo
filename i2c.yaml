@@ -2,6 +2,9 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: i2c
+  annotations:
+    gpio.virtual-kubelet.io/i2c-sda: "21"
+    gpio.virtual-kubelet.io/i2c-scl: "22"
 spec:
   containers:
   - name: wasm
