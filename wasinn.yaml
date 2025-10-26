@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: wasinn
+  namespace: default
+spec:
+  containers:
+    - image: mewz-test.sakuracr.jp/wasi_nn_person_detect
+      name: wasm
+  nodeName: espeye
